@@ -1,4 +1,4 @@
-//-------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 //Fonctions de manipulation de chaînes :
 //exercice 1: Inverser une chaîne : écrivez une fonction qui inverse une chaîne donnée.
 function inverseChaine(s) {
@@ -10,7 +10,7 @@ console.log("PP ex 1:",inverseChaine('omar'));
 function compter_nb(s) {
     return s.length;
 }
-console.log("PP ex 2:",compter_nb("omarbarhoumi2003"))
+console.log("PP ex 2:",compter_nb("omarbarhoumi2003"));
 //--------------------------------------------------------------------
 //exercice 3: Mettre les mots en majuscule : implémentez une fonction qui met en majuscule la première lettre de chaque mot dans une phrase.
 function capitalizeWords(s) {
@@ -41,18 +41,14 @@ console.log("PP ex 5: la somme de tableau est",sumArray(arr1));
 // exercice 6:Filtrer le tableau : implémentez une fonction qui filtre les éléments d'un tableau en fonction d'une condition donnée.
 
 
-//function filterArray(arr, condition) {
-    //return arr.filter(condition);                           //probleme ici 
-//}
-
-
+var even=arr1.filter(function(num){
+    return num % 2 === 0;
+})
+console.log(even);  
 //----------------------------------------------------------------------------
 //Fonctions mathématiques :
 //exercice 7: Factorielle : Écrivez une fonction pour calculer la factorielle d'un nombre donné.
 function factorial(n) {
-    if (n < 0) {
-        throw new Error("non définit");
-    }
     if (n === 0) {
         return 1;
     }
